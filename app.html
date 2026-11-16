@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="app1.css">
+</head>
+<body>
+
+    <div class="todo-container">
+
+        <h1>My To-Do List</h1>
+        <p>Organize your day, one task at a time!</p>
+
+        <!-- Task Input -->
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Enter your task..."
+            >
+
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <!-- Task List -->
+       <!-- Dashboard Statistics -->
+<div class="dashboard">
+
+    <div class="stat-card total-card">
+        <h3>Total Tasks</h3>
+        <h2 id="totalTasks">0</h2>
+    </div>
+
+    <div class="stat-card completed-card">
+        <h3>Completed</h3>
+        <h2 id="completedTasks">0</h2>
+    </div>
+
+    <div class="stat-card pending-card">
+        <h3>Pending</h3>
+        <h2 id="pendingTasks">0</h2>
+    </div>
+
+</div>
+
+<!-- Task Filters -->
+<div class="filter-section">
+
+    <button class="filter-btn active" data-filter="all">
+        All Tasks
+    </button>
+
+    <button class="filter-btn" data-filter="pending">
+        Pending
+    </button>
+
+    <button class="filter-btn" data-filter="completed">
+        Completed
+    </button>
+
+</div>
+
+<!-- Task List -->
+<ul id="taskList"></ul>
+    </div>
+
+    <!-- Connect JavaScript -->
+    <script src="appj.js"></script>
+
+</body>
+</html>
